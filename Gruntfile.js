@@ -115,6 +115,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
 
-  grunt.registerTask('build', ['concat', 'uglify', 'sass', 'pug', 'imagemin', 'copy']);
+
+  grunt.registerTask('fullbuild', ['concat', 'uglify', 'sass', 'pug', 'imagemin', 'copy']);
+  grunt.registerTask('build', ['concat', 'uglify', 'sass', 'pug', 'copy']);
   grunt.registerTask('default', ['browserSync', 'watch']);
 };
