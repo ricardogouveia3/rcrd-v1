@@ -18,7 +18,7 @@ document.getElementById("years-old").innerHTML = age.toString();
 /* Smooth scroll to a certain element */
 
 /* Load particles */
-particlesJS.load('welcome', '../json/particles.json', function() {
+particlesJS.load('welcome', './json/particles.json', function() {
   console.log('callback - particles.js config loaded on welcome-section background');
 });
 

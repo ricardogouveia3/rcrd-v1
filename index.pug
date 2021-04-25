@@ -8,8 +8,9 @@ html(lang='pt-br')
     meta(name='viewport' content='width=device-width, initial-scale=1')
     script(src='https://use.fontawesome.com/b7da4b8514.js')
 
-    link(rel='stylesheet' type='text/css' href='css/style.css')
-    link(rel='icon' type='image/ico' href='img/favicon.ico')
+    link(rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css')
+    link(rel='stylesheet' type='text/css' href='./css/style.css')
+    link(rel='icon' type='image/ico' href='./img/favicon.ico')
 
     link(href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' rel='stylesheet')
 
@@ -21,7 +22,7 @@ html(lang='pt-br')
       div.main
         header.header
           a(href="#")
-            img.logo(alt="Logotipo do site: quadrado com as letras R,C,R,D" src="img/logo.png")
+            img.logo(alt="Logotipo do site: quadrado com as letras R,C,R,D" src="./img/logo.png")
 
           .nav.large
             ul.nav-list
@@ -36,7 +37,7 @@ html(lang='pt-br')
 
           .nav.small
             a#dropdown-button(onclick="dropdownToggle()" href="javascript:void(0)")
-              img.icon(alt="Indicativo de menu: link para menu do site em telas médias e pequenas" src="img/dropdown-icon.svg")
+              img.icon(alt="Indicativo de menu: link para menu do site em telas médias e pequenas" src="./img/dropdown-icon.svg")
             ul#dropdown-content.content(style="display: none;")
               li.nav-list-item
                 a.nav-link.active(href="#") Home
@@ -54,7 +55,7 @@ html(lang='pt-br')
           span.description Desenvolvedor front-end &amp; UI designer
 
         a(href="#about")
-          img.arrow-down.up-n-down(src="img/arrow-down.svg" alt="Seta para baixo, link para a proxima seção")
+          img.arrow-down.up-n-down(src="./img/arrow-down.svg" alt="Seta para baixo, link para a proxima seção")
 
   //- About Section
   section#about.home-section.about
@@ -105,7 +106,7 @@ html(lang='pt-br')
         li.item
           a.link(target="_blank" href="http://devinsanta.github.io")
             div.card
-              div.image(style="background-image: url(img/portfolio/devinsanta.png)")
+              div.image(style="background-image: url(./img/portfolio/devinsanta.png)")
               div.content
                 h3.title DevInSanta
                 span.project-link http://devinsanta.github.io
@@ -117,7 +118,7 @@ html(lang='pt-br')
         li.item
           a.link(target="_blank" href="#")
             div.card
-              div.image(style="background-image: url(img/portfolio/soon.png)")
+              div.image(style="background-image: url(./img/portfolio/soon.png)")
               div.content
                 h3.title Em breve
                 span.project-link about:blank
@@ -132,7 +133,7 @@ html(lang='pt-br')
         li.item
           a.link(target="_blank" href="#")
             div.card
-              div.image(style="background-image: url(img/portfolio/soon.png)")
+              div.image(style="background-image: url(./img/portfolio/soon.png)")
               div.content
                 h3.title Em breve
                 span.project-link about:blank
@@ -147,7 +148,7 @@ html(lang='pt-br')
         li.item
           a.link(target="_blank" href="#")
             div.card
-              div.image(style="background-image: url(img/portfolio/soon.png)")
+              div.image(style="background-image: url(./img/portfolio/soon.png)")
               div.content
                 h3.title Em breve
                 span.project-link about:blank
@@ -194,5 +195,5 @@ html(lang='pt-br')
   footer#footer.footer
     span.text Feito com 🍕 e ❤️️
 
-  script(src="js/index.js" type="text/javascript")
+  script(src="./js/index.js" type="text/javascript")
 

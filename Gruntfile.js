@@ -52,11 +52,17 @@ module.exports = function(grunt) {
         files: [
           {
             expand: true,
-            src: ['assets/img/*.png'],
-            dest: 'build/img',
-            ext: '.png'
+            cwd: 'assets/img/',
+            src: ['**/*.{png,jpg,gif,ico,svg}'],
+            dest: 'build/img'
           }
         ]
+      },
+    },
+
+    copy: {
+      main: {
+        files: [{expand: true, flatten: true, src: ['assets/data/**'], dest: 'build/json/', filter: 'isFile'}],
       },
     },
 
@@ -105,8 +111,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-pug');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
 
+  grunt.registerTask('build', ['concat', 'uglify', 'sass', 'pug', 'imagemin', 'copy']);
   grunt.registerTask('default', ['browserSync', 'watch']);
 };
