@@ -18,15 +18,15 @@ document.getElementById("years-old").innerHTML = age.toString();
 /* Smooth scroll to a certain element */
 
 /* Load particles */
-particlesJS.load('welcome', './json/particles.json', function() {
+particlesJS.load('welcome', './v1/json/particles.json', function() {
   console.log('callback - particles.js config loaded on welcome-section background');
 });
 
-particlesJS.load('portfolio', '../json/particles.json', function() {
+particlesJS.load('portfolio', './v1/json/particles.json', function() {
   console.log('callback - particles.js config loaded on portfolio background');
 });
 
-particlesJS.load('footer', '../json/particles.json', function() {
+particlesJS.load('footer', './v1/json/particles.json', function() {
   console.log('callback - particles.js config loaded on footer background');
 });
 
